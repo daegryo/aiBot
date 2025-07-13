@@ -123,7 +123,7 @@ async def ai(message: Message):
         with open("image.jpg", "wb") as file:
 
             file.write(image_data)
-        photo = FSInputFile("D:/Work/bot/image.jpg ")
+        photo = FSInputFile("image.jpg")
         await message.answer_photo(photo)
 
     elif string.before == "ask":
